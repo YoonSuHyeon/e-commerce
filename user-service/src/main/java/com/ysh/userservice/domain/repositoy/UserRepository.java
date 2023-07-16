@@ -1,6 +1,6 @@
-package com.ysh.userservice.repository;
+package com.ysh.userservice.domain.repositoy;
 
-import com.ysh.userservice.model.User;
+import com.ysh.userservice.domain.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
