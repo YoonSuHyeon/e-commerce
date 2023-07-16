@@ -14,6 +14,7 @@ TODO 추후 작성
 - Maven
 - Mysql
 - Spring JPA
+- Spring Security
 
 ## 구현 기능
 필요한 기능을 계속해서 추가하면서 기능 개발 진행
