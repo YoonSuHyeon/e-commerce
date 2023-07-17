@@ -3,11 +3,14 @@ package com.ysh.userservice.presentation.user;
 
 import com.ysh.userservice.domain.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/api/users")
 public class UserController {
 
     private UserService userService;
@@ -17,10 +20,12 @@ public class UserController {
         this.userService = userService;
     }
 
-    @PostMapping("/users")
-    public String signUp(@RequestBody UserDTO userDTO) {
+
+    @PostMapping
+    public ResponseEntity<UserDTO> signUp(@RequestBody UserDTO userDTO) {
 
         userService.signUp(userDTO);
-        return "회원가입 완료";
+        return ResponseEntity.ok(userDTO);
     }
+
 }
