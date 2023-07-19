@@ -1,6 +1,7 @@
 package com.ysh.userservice.presentation.user;
 
-import com.ysh.userservice.domain.model.UserType;
+import com.ysh.userservice.domain.user.model.UserType;
+import com.ysh.userservice.presentation.dto.UserRequest;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -13,7 +14,7 @@ class UserDTOTest {
         String password = "12345678";
         UserType type = UserType.A;
 
-        UserDTO userDTO = new UserDTO(name, email, password, type);
+        UserRequest userDTO = new UserRequest(name, email, password, type);
         Assertions.assertTrue(userDTO.isValid());
 
     }
@@ -25,7 +26,7 @@ class UserDTOTest {
         String password = "12345678";
         UserType type = UserType.A;
 
-        UserDTO userDTO = new UserDTO(name, email, password, type);
+        UserRequest userDTO = new UserRequest(name, email, password, type);
         Assertions.assertFalse(userDTO.isValid());
 
     }
@@ -37,7 +38,7 @@ class UserDTOTest {
         String password = "12345678";
         UserType type = UserType.A;
 
-        UserDTO userDTO = new UserDTO(name, email, password, type);
+        UserRequest userDTO = new UserRequest(name, email, password, type);
         Assertions.assertFalse(userDTO.isValid());
 
     }
@@ -49,7 +50,7 @@ class UserDTOTest {
         String password = "1234567";
         UserType type = UserType.A;
 
-        UserDTO userDTO = new UserDTO(name, email, password, type);
+        UserRequest userDTO = new UserRequest(name, email, password, type);
         Assertions.assertFalse(userDTO.isValid());
 
     }

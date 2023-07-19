@@ -1,7 +1,6 @@
-package com.ysh.userservice.domain.entity;
+package com.ysh.userservice.domain.user.model;
 
 
-import com.ysh.userservice.domain.model.UserType;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;

@@ -1,7 +1,7 @@
-package com.ysh.userservice.presentation.user;
+package com.ysh.userservice.presentation.dto;
 
 
-import com.ysh.userservice.domain.model.UserType;
+import com.ysh.userservice.domain.user.model.UserType;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class UserDTO {
+public class UserRequest {
 
     private String name;
     private String email;
