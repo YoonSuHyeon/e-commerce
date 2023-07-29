@@ -1,13 +1,11 @@
 package com.ysh.userservice.infrastructure.persistence;
 
-import com.ysh.userservice.domain.user.model.User;
+import com.ysh.userservice.domain.user.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.Optional;
-
 @Repository
-public interface UserRepository extends JpaRepository<User, Long> {
+public interface UserRepository extends JpaRepository<User, String> {
 
-    Optional<User> findByEmail(String email);
+    long countById(String id);
 }

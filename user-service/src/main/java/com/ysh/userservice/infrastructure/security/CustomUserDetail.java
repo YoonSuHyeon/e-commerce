@@ -1,6 +1,7 @@
 package com.ysh.userservice.infrastructure.security;
 
-import com.ysh.userservice.domain.user.model.User;
+import com.ysh.userservice.domain.user.entity.User;
+import lombok.Getter;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -8,6 +9,7 @@ import java.util.Collection;
 
 public class CustomUserDetail implements UserDetails {
 
+    @Getter
     private User user;
 
     public CustomUserDetail(User user) {
