@@ -17,6 +17,7 @@ TODO 추후 작성
 - Spring Security - 6.1.1
 - Springdoc-Openapi -2.1.0
 - Jwt
+- Spring Cloud Gateway
 
 ## 구현 기능
 필요한 기능을 계속해서 추가하면서 기능 개발 진행
